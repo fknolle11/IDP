@@ -9,22 +9,25 @@ This project uses [jsPsych](https://www.jspsych.org/) for browser-based behavior
 If you just want to run and deploy the experiment:
 
 1. Install Node.js from [nodejs.org](https://nodejs.org/).
-2. Open this project folder in a terminal.
-3. Run `npm install` once.
-4. Start one experiment locally with `npm start <experiment-file>` (examples below).
-5. Build a JATOS package with `npm run jatos <experiment-file>`.
-6. Import the created `.jzip` into JATOS.
+2. Download IDP folder
+3. Add a folder called 'html' to the IDP folder (to later store other experiment.html files) 
+4. Open this project folder in a terminal.
+5. Run `npm install` once.
+6. Start one experiment locally with `npm start <experiment-file>` (examples below).
+7. Build a JATOS package with `npm run jatos <experiment-file>`.
+8. Potential error (alea): IDP/node_modules/jspsych/dist/index.js and replace alea with alea.js 
+9. Import the created `.jzip` into JATOS.
 
 ## Which experiment files to use
 
 Use one of these module entrypoints directly:
 
-- `src/experiment-de.ts`
-- `src/experiment-de-prior.ts`
-- `src/experiment-en.ts`
-- `src/experiment-en-prior.ts`
+- `experiment-de`
+- `experiment-de-prior`
+- `experiment-en`
+- `experiment-en-prior`
 
-`src/experiment.ts` is the shared base implementation and should not be used directly as a study module.
+`experiment` is the shared base implementation and should not be used directly as a study module.
 
 ### Module behavior
 
